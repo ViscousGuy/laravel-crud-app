@@ -38,9 +38,9 @@ A Minimal CRUD Application that fetches product list from database from backend 
     ```
 8.  **Running the Project:**
 
-        ```
-        php artisan serve
-        ```
+    ```
+    php artisan serve
+    ```
 
 **Routes**
 
