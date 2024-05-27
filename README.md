@@ -28,11 +28,18 @@ A Minimal CRUD Application that fetches product list from database from backend 
     ```
     php artisan migrate
     ```
-6.  **Running the Project:**
+6.  **Install NPM dependencies:**
+    ```
+    npm install
+    ```
+7.  **Start the Vite development server:**
+    ```
+    npm run dev
+    ```
+8.  **Running the Project:**
 
         ```
         php artisan serve
-
         ```
 
 **Routes**
