@@ -4,9 +4,9 @@ A Minimal CRUD Application that fetches product list from database from backend 
 
 **Technologies Used**
 
--   Laravel [11.5.0]
--   PHP [8.3.6]
--   [Database - SQLite]
+-   Laravel 
+-   React 
+-   Database - SQLite
 
 **Installation**
 
