@@ -4,9 +4,9 @@ A Minimal CRUD Application that fetches product list from database from backend 
 
 **Technologies Used**
 
--   Laravel [11.5.0]
--   PHP [8.3.6]
--   [Database - SQLite]
+-   Laravel 
+-   React 
+-   Database - SQLite
 
 **Installation**
 
@@ -38,22 +38,42 @@ A Minimal CRUD Application that fetches product list from database from backend 
     ```
 8.  **Running the Project:**
 
-        ```
-        php artisan serve
-        ```
+    ```
+    php artisan serve
+    ```
 
 **API Routes**
 
 The application defines the following routes:
+`http://127.0.0.1:8000/api/products`
+
+![API RESPONCE](screenshots/api_output.png)
+
 
 **Product Management Routes (grouped)**
 
--   **GET /products:** Displays a list of all products (`products.index`).
--   **GET /products/create:** Displays the form to create a new product (`products.create`).
--   **POST /products:** Stores a newly created product (`products.store`).
--   **GET /products/{product}/edit:** Displays the form to edit an existing product (`products.edit`).
--   **PUT /products/{product}:** Updates an existing product (`products.update`).
--   **DELETE /products/{product}:** Deletes an existing product (`products.destroy`)
+-   **`/`**
+
+    Displays a list of all products.
+
+    ![Home Page](screenshots/home_page.png)
+
+
+-   **`/products/create`**
+
+    Displays the form to create a new product.
+
+    ![Create Project](screenshots/create_product_page.png)
+
+
+-   **`/products/{id}/edit`**
+
+    Displays the form to edit an existing product.
+
+    ![Eddit Project](screenshots/edit_product_page.png)
+    
+
+-   **DELETE `/products/{product}`:** Deletes an existing product (`products.destroy`)
 
 **Notes:**
 
