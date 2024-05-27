@@ -1,0 +1,36 @@
+/* resources/css/NotFound.css */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.not-found-content {
+    text-align: center;
+}
+
+.not-found-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.not-found-message {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.not-found-link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.not-found-link:hover {
+    color: #0056b3;
+}

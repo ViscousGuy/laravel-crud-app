@@ -3,17 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
-Route::get('/', function () {
-    return view('welcome');
+
+//api routes
+Route::prefix('api')->group(function () {
+    Route::get('/products', [ProductController::class, 'index']);
+    Route::get('/products/{product}', [ProductController::class, 'show']);
+    Route::post('/products', [ProductController::class, 'store']);
+    Route::put('/products/{product}', [ProductController::class, 'update']);
+    Route::delete('/products/{product}', [ProductController::class, 'destroy']);
 });
 
-
-Route::controller(ProductController::class)->group(function(){
-    Route::get('/products','index')->name('products.index');
-    Route::get('/products/create','create')->name('products.create');
-    Route::post('/products','store')->name('products.store');
-    Route::get('/products/{product}/edit','edit')->name('products.edit');
-    Route::put('/products/{product}','update')->name('products.update');
-    Route::delete('/products/{product}','destroy')->name('products.destroy');
-
-});
+// Catch-all route for React application
+Route::get('/{any?}', function () {
+    return view('app');
+})->where('any', '.*');

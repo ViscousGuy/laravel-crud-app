@@ -42,13 +42,9 @@ A Minimal CRUD Application that fetches product list from database from backend 
         php artisan serve
         ```
 
-**Routes**
+**API Routes**
 
 The application defines the following routes:
-
-**Basic Routes**
-
--   **GET /:** Renders the default Laravel 11 'welcome' view.
 
 **Product Management Routes (grouped)**
 
